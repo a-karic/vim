@@ -1,0 +1,12 @@
+snippet it
+	it { expect(${1}).to ${0} }
+
+snippet itn
+	it { expect(${1}).not_to ${0} }
+
+snippet itd
+	it '${1:test_name}' do
+		${0}
+	end
+snippet letc
+	let(:${1:name}) { create(:${2}, :${0}) }
